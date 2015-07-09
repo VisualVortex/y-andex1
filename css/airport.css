@@ -4,29 +4,78 @@
 
 table{
     border-spacing: 0;
+    z-index: 5;
+    border: solid 1px #ccc;
+    border-collapse: collapse;
+}
+.head {
+
 }
 
-tr:hover {
+th {
     background: #ccc;
 }
 
-td {
-    width: 20px;
-    padding: 3px;
+td, th {
+    width: 40px;
+    text-align: center;
+    border: solid 1px #bbb;
+    padding: 2px 0;
+    margin: 0;
+
 }
-td:hover:after {
-    width: 20px;
+tr:nth-of-type(even){
+    background: HSLa(0,0%,50%,0.1);
+    z-index: -9;
 }
+tr:hover {
+    background: HSLa(90,50%,50%,0.5);
+}
+
 td:hover {
-   /*background: green; */
     font-weight: bold;
+    background: HSLa(90,60%,50%,0.5);
 }
 td:hover:after {
     content: '';
-    display: block;
-    position: absolute;
+    width: 10px;
     top: 0;
     bottom: 0;
-    background: #ccc;
+    display: block;
+    position: absolute;
+    background: HSLa(90,50%,50%,0.5);
     z-index: -1;
+    padding: 0;
+    margin: 0;
 }
+
+/*Задаем ширину столбца и ширину выделения столбца по номеру столбца*/
+tr>td:nth-of-type(1), tr>td:nth-of-type(1):hover:after{
+    width: 100px;
+}
+tr>td:nth-of-type(2), tr>td:nth-of-type(2):hover:after{
+    width: 100px;
+}
+tr>td:nth-of-type(3), tr>td:nth-of-type(3):hover:after{
+    width: 125px;
+}
+tr>td:nth-of-type(4), tr>td:nth-of-type(4):hover:after{
+    width: 80px;
+}
+tr>td:nth-of-type(5), tr>td:nth-of-type(5):hover:after{
+    width: 90px;
+}
+tr>td:nth-of-type(6), tr>td:nth-of-type(6):hover:after{
+    width: 95px;
+}
+tr>td:nth-of-type(7), tr>td:nth-of-type(7):hover:after{
+    width: 115px;
+}
+tr>td:nth-of-type(8), tr>td:nth-of-type(8):hover:after{
+    width: 80px;
+}
+tr>td:nth-of-type(9), tr>td:nth-of-type(9):hover:after{
+    width: 110px;
+}
+
+
