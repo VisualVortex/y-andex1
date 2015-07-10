@@ -22,7 +22,8 @@ body {
 .slider {
     background-color: #eee;
     height: inherit;
-    overflow: hidden;
+    overflow-y: scroll;
+    overflow-x: hidden;
     position: relative;
     width: inherit;
     -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
