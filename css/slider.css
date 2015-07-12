@@ -1,4 +1,4 @@
-/* îáùèé ñòèëü ñòðàíèöû  */
+/* Ð¾Ð±Ñ‰Ð¸Ð¹ ÑÑ‚Ð¸Ð»ÑŒ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹  */
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +11,7 @@ body {
     background-color: #f5f0d8;
 }
 
-/* ñòèëè êîíòåéíåðîâ ñäàéäåðà */
+/* ÑÑ‚Ð¸Ð»Ð¸ ÐºÐ¾Ð½Ñ‚ÐµÐ¹Ð½ÐµÑ€Ð¾Ð² ÑÐ´Ð°Ð¹Ð´ÐµÑ€Ð° */
 .wrapper {
     height: 350px;
     margin: 100px auto 0;
@@ -31,13 +31,13 @@ body {
     -o-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
     box-shadow: 0 0 20px rgba(0, 0, 0, .5);
 }
-/*ñêðûâàåì èíïóò*/
+/*ÑÐºÑ€Ñ‹Ð²Ð°ÐµÐ¼ Ð¸Ð½Ð¿ÑƒÑ‚*/
 .wrapper > input {
     display: none;
 }
 
-/* ïðîïèñûâàåì îáùèé ñòèëü ñëàéäîâ, çàòåì êàæäûé îòäåëüíî */
-/*slides ìîæíî óäàëèòü ïîñëå îæèâëåíèÿ ñëàéäîâ*/
+/* Ð¿Ñ€Ð¾Ð¿Ð¸ÑÑ‹Ð²Ð°ÐµÐ¼ Ð¾Ð±Ñ‰Ð¸Ð¹ ÑÑ‚Ð¸Ð»ÑŒ ÑÐ»Ð°Ð¹Ð´Ð¾Ð², Ð·Ð°Ñ‚ÐµÐ¼ ÐºÐ°Ð¶Ð´Ñ‹Ð¹ Ð¾Ñ‚Ð´ÐµÐ»ÑŒÐ½Ð¾ */
+/*slides Ð¼Ð¾Ð¶Ð½Ð¾ ÑƒÐ´Ð°Ð»Ð¸Ñ‚ÑŒ Ð¿Ð¾ÑÐ»Ðµ Ð¾Ð¶Ð¸Ð²Ð»ÐµÐ½Ð¸Ñ ÑÐ»Ð°Ð¹Ð´Ð¾Ð²*/
 .slides {
     height: inherit;
     position: absolute;
@@ -45,13 +45,13 @@ body {
 }
 
 .slide1 {
-    background-color: #f5f0d8;
+    background-color: #eee;
 }
 .slide2 {
-    background-color: aliceblue;
+    background-color: #eee;
 }
 
-/*îôîðìëÿåì ëåéáëû*/
+/*Ð¾Ñ„Ð¾Ñ€Ð¼Ð»ÑÐµÐ¼ Ð»ÐµÐ¹Ð±Ð»Ñ‹*/
 .wrapper .controls {
     margin-left: auto;
     margin-top: -60px;
@@ -76,7 +76,7 @@ body {
     transition: background ease-in-out .5s;
 }
 
-/* çàêðàøèâàåì âûáðàííûé ïåðåêëþ÷àòåëü*/
+/* Ð·Ð°ÐºÑ€Ð°ÑˆÐ¸Ð²Ð°ÐµÐ¼ Ð²Ñ‹Ð±Ñ€Ð°Ð½Ð½Ñ‹Ð¹ Ð¿ÐµÑ€ÐµÐºÐ»ÑŽÑ‡Ð°Ñ‚ÐµÐ»ÑŒ*/
 .wrapper label:hover {
     color: blue;
 }
@@ -86,7 +86,7 @@ body {
     font-weight: bold;
 }
 
-/*îæèâëÿåì ñëàéäåð*/
+/*Ð¾Ð¶Ð¸Ð²Ð»ÑÐµÐ¼ ÑÐ»Ð°Ð¹Ð´ÐµÑ€*/
 .slides {
     height: inherit;
     opacity: 0;
@@ -113,16 +113,30 @@ body {
 }
 
 
+/*Live content*/
 
-/* èçìåíåíèÿ â çàâèñèìîñòè îò ðàçðåøåíèÿ */
-/*
+#slide1:checked ~ .slider > .slide1 tr>td:nth-of-type(1):after {
+    opacity: 1;
+    content: " Ð’Ñ‹Ð»ÐµÑ‚"
+}
+#slide2:checked ~  .slider > .slide2 tr>td:nth-of-type(1):after {
+    opacity: 1;
+    content: " ÐŸÑ€Ð¸Ð»ÐµÑ‚"
+}
+
+
+/* Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ñ Ð² Ð·Ð°Ð²Ð¸ÑÐ¸Ð¼Ð¾ÑÑ‚Ð¸ Ð¾Ñ‚ Ñ€Ð°Ð·Ñ€ÐµÑˆÐµÐ½Ð¸Ñ */
 @media screen and (max-width: 1000px) {
-    nav {
-        width: 117px;
-        opacity: 0.9;
+    #slide1:checked ~ .slider > .slide1 tr>td:nth-of-type(1):after,
+    #slide2:checked ~  .slider > .slide2 tr>td:nth-of-type(1):after {
+        opacity: 1;
+        content: ""
     }
-    .pad{
-        /!*padding-left: 122px*!/;
-        margin: 0 124px;
+    #slide1:checked ~ .slider > .slide1 tr>td:nth-of-type(1) {
+        background: url(../img/takeoff.png) right no-repeat;
     }
-}*/
+    #slide2:checked ~  .slider > .slide2 tr>td:nth-of-type(1) {
+        background: url(../img/arrival.png) right no-repeat;
+    }
+
+}

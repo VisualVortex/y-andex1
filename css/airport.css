@@ -32,7 +32,7 @@ td, th {
 
 }
 tr:nth-of-type(even){
-    background: HSLa(0,0%,50%,0.1);
+    background: HSLa(0,0%,80%,0.2); /* #e1e1e1;*/
     z-index: -9;
 }
 tr:hover {
@@ -56,7 +56,7 @@ td:hover:after {
     margin: 0;
 }
 
-/*Задаем ширину столбца и ширину выделения столбца по номеру столбца*/
+/*пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ*/
 tr>th:nth-of-type(1), tr>td:nth-of-type(1), tr>td:nth-of-type(1):hover:after{
     width: 100px;
 }
@@ -85,10 +85,10 @@ tr>th:nth-of-type(9), tr>td:nth-of-type(9), tr>td:nth-of-type(9):hover:after{
     width: 110px;
 }
 
-/*Заполняем поля в зависимости от размера экрана*/
-tr>td:nth-of-type(1):after {
-    background: url(../img/type.png) 0 0;
-    width: 20px;
-    height: 20px;
+/*пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ*/
+/*tr>td:nth-of-type(1) {
+    background: url(../img/type.png) right 3px no-repeat;
+}*/
+#slide2:checked ~ tr>td:nth-of-type(1) {
+    background: url(../img/type.png) right -19px no-repeat;
 }
-
