@@ -123,6 +123,11 @@ body {
     opacity: 1;
     content: " Прилет"
 }
+tr>th:nth-of-type(4):after,
+tr>th:nth-of-type(4):after{
+    opacity: 1;
+    content: "4Логотип"
+}
 
 
 /* изменения в зависимости от разрешения */
@@ -133,10 +138,50 @@ body {
         content: ""
     }
     #slide1:checked ~ .slider > .slide1 tr>td:nth-of-type(1) {
-        background: url(../img/takeoff.png) right no-repeat;
+        background: url(../img/takeoff.png) center no-repeat;
     }
     #slide2:checked ~  .slider > .slide2 tr>td:nth-of-type(1) {
-        background: url(../img/arrival.png) right no-repeat;
+        background: url(../img/arrival.png) center no-repeat;
+    }
+    tr>th:nth-of-type(4):after,
+    tr>th:nth-of-type(4):after{
+        opacity: 1;
+        content: "Компания"
     }
 
+    /*New Width*/
+
+    .wrapper, .head {
+        /*width: 895px;*/
+        width: 700px;
+    }
+    tr>th:nth-of-type(1), tr>td:nth-of-type(1), tr>td:nth-of-type(1):hover:after{
+        width: 50px;
+        text-align: left;
+    }
+    tr>th:nth-of-type(2), tr>td:nth-of-type(2), tr>td:nth-of-type(2):hover:after{
+        width: 50px;
+    }
+    tr>th:nth-of-type(3), tr>td:nth-of-type(3), tr>td:nth-of-type(3):hover:after{
+        display: none;
+        /*width: 120px;*/
+    }
+    tr>th:nth-of-type(4), tr>td:nth-of-type(4), tr>td:nth-of-type(4):hover:after{
+        width: 100px;
+    }
+    tr>th:nth-of-type(5), tr>td:nth-of-type(5), tr>td:nth-of-type(5):hover:after{
+        width: 90px;
+    }
+    tr>th:nth-of-type(6), tr>td:nth-of-type(6), tr>td:nth-of-type(6):hover:after{
+        width: 95px;
+    }
+    tr>th:nth-of-type(7), tr>td:nth-of-type(7), tr>td:nth-of-type(7):hover:after{
+        width: 115px;
+    }
+    tr>th:nth-of-type(8), tr>td:nth-of-type(8), tr>td:nth-of-type(8):hover:after{
+        width: 80px;
+    }
+    tr>th:nth-of-type(9), tr>td:nth-of-type(9), tr>td:nth-of-type(9):hover:after{
+        width: 110px;
+    }
 }
