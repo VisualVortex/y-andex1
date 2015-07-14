@@ -1,25 +1,29 @@
 /*table css*/
 .container {
     position: relative;
+    margin:auto;
+    width: 955px;
 }
 
 table{
     border-spacing: 0;
-    z-index: 5;
+    z-index: 7;
     border: solid 1px #ccc;
     border-collapse: collapse;
+    margin: auto;
 }
 .head {
     position: fixed;
     top: -1px;
     background-color: #f5f0d8;
-    z-index:7;
-    width: 895px;
+    z-index:15;
+    /*width: 895px;*/
     /*opacity: 0.5;*/
 }
 
 th {
     background: #ccc;
+    height: 20px;
 }
 
 td, th {
@@ -28,23 +32,26 @@ td, th {
     border: solid 1px #bbb;
     padding: 2px 0;
     margin: 0;
+    height: 40px;
+}
+th {
+    background: #ccc;
     height: 20px;
-
 }
 tr:nth-of-type(even){
     background: HSLa(0,0%,80%,0.2); /* #e1e1e1;*/
     z-index: -9;
 }
+/*Hover*/
 tr:hover {
     background: HSLa(90,50%,50%,0.5);
 }
-
 td:hover {
     font-weight: bold;
     background: HSLa(90,60%,50%,0.5);
 }
 td:hover:after {
-    content: '';
+    content: "";
     width: 10px;
     top: 0;
     bottom: 0;
@@ -55,8 +62,18 @@ td:hover:after {
     padding: 0;
     margin: 0;
 }
+#slide1:checked ~ table tr>td:nth-of-type(1):hover:after,
+#slide2:checked ~ table tr>td:nth-of-type(1):hover:after{
+    content: ""
+}
 
-/*������ ������ ������� � ������ ��������� ������� �� ������ �������*/
+#slide1:checked ~ table tr>td:nth-of-type(1):hover {
+    background: url(../img/takeoff.png) center no-repeat;
+}
+#slide2:checked ~ table tr>td:nth-of-type(1):hover {
+    background: url(../img/arrival.png) center no-repeat;
+}
+
 tr>th:nth-of-type(1), tr>td:nth-of-type(1), tr>td:nth-of-type(1):hover:after{
     width: 100px;
 }
@@ -73,22 +90,16 @@ tr>th:nth-of-type(5), tr>td:nth-of-type(5), tr>td:nth-of-type(5):hover:after{
     width: 90px;
 }
 tr>th:nth-of-type(6), tr>td:nth-of-type(6), tr>td:nth-of-type(6):hover:after{
-    width: 95px;
+    width: 125px;
 }
 tr>th:nth-of-type(7), tr>td:nth-of-type(7), tr>td:nth-of-type(7):hover:after{
     width: 115px;
 }
 tr>th:nth-of-type(8), tr>td:nth-of-type(8), tr>td:nth-of-type(8):hover:after{
-    width: 80px;
+    width: 110px;
 }
 tr>th:nth-of-type(9), tr>td:nth-of-type(9), tr>td:nth-of-type(9):hover:after{
     width: 110px;
 }
 
-/*��������� ���� � ����������� �� ������� ������*/
-/*tr>td:nth-of-type(1) {
-    background: url(../img/type.png) right 3px no-repeat;
-}*/
-#slide2:checked ~ tr>td:nth-of-type(1) {
-    background: url(../img/type.png) right -19px no-repeat;
-}
+
