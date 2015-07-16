@@ -1,0 +1,206 @@
+/* Popup base styles  */
+/* all TR link */
+tr[onclick] {
+    cursor: pointer;
+}
+
+.overlay {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+    /* darkness */
+    background-color: rgba(0, 0, 0, 0.35);
+    position: fixed;
+    cursor: default;
+}
+
+/* activate darkness */
+.overlay:target {
+    display: block;
+}
+
+/* popup styles */
+.popup {
+    top: -100%;
+    right: 0;
+    left: 50%;
+    z-index: 20;
+    margin: 0;
+    width: 955px;
+    min-width: 320px;
+    max-width: 955px;
+    /* fix window */
+    position: fixed;
+    padding: 15px;
+    border: 1px solid #383838;
+    background: #fefefe;
+    /* border radius */
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    font: 14px/18px 'Tahoma', Arial, sans-serif;
+    /* shadow */
+    -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, .22), 0 19px 60px rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 15px 20px rgba(0, 0, 0, .22), 0 19px 60px rgba(0, 0, 0, .3);
+    -ms-box-shadow: 0 15px 20px rgba(0, 0, 0, .22), 0 19px 60px rgba(0, 0, 0, .3);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, .22), 0 19px 60px rgba(0, 0, 0, .3);
+    -webkit-transform: translate(-50%, -500%);
+    -ms-transform: translate(-50%, -500%);
+    -o-transform: translate(-50%, -500%);
+    transform: translate(-50%, -500%);
+    -webkit-transition: -webkit-transform 0.6s ease-out;
+    -moz-transition: -moz-transform 0.6s ease-out;
+    -o-transition: -o-transform 0.6s ease-out;
+    transition: transform 0.6s ease-out;
+}
+
+/* popup block. makes popup visible */
+.overlay:target + .popup {
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    top: 67px;
+}
+
+/* close button */
+.close {
+    top: -10px;
+    right: -10px;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    padding: 0;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-radius: 15px;
+    background-color: rgba(61, 61, 61, 0.8);
+    -webkit-box-shadow: 0px 0px 10px #000;
+    -moz-box-shadow: 0px 0px 10px #000;
+    box-shadow: 0px 0px 10px #000;
+    text-align: center;
+    text-decoration: none;
+    font: 13px/20px 'Tahoma', Arial, sans-serif;
+    font-weight: bold;
+    -webkit-transition: all ease .8s;
+    -moz-transition: all ease .8s;
+    -ms-transition: all ease .8s;
+    -o-transition: all ease .8s;
+    transition: all ease .8s;
+}
+
+/* X button*/
+.close:before {
+    color: rgba(255, 255, 255, 0.9);
+    content: "X";
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
+    font-size: 12px;
+}
+
+/* X animation*/
+.close:hover {
+    background-color: rgba(252, 20, 0, 0.8);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.pic-left,
+.pic-right {
+    width: 25%;
+    height: auto;
+}
+
+.pic-left {
+    float: left;
+    margin: 5px 15px 5px 0;
+}
+
+.pic-right {
+    float: right;
+    margin: 5px 0 5px 15px;
+}
+
+td:nth-of-type(1):hover {
+    font-weight: bold;
+    background: red;
+}
+
+/* ul li decoration*/
+h2 {
+    border-bottom: dotted 2px #bbbbbb;
+    padding-bottom: 8px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 10px 5px 10px 20px;
+}
+
+li {
+    border-bottom: solid 1px #eeeeee;
+    padding: 5px 0;
+}
+
+/* adding popup headers */
+li:before {
+    font-weight: bold;
+}
+
+#slide1:checked ~ div li:nth-of-type(1):after {
+    content: "Тип Рейса: Вылет";
+    font-weight: bold;
+    color: darkblue;
+}
+
+#slide2:checked ~ div li:nth-of-type(1):after {
+    content: "Тип Рейса: Прилет";
+    font-weight: bold;
+    color: darkblue;
+}
+
+li:nth-of-type(2):before {
+    content: "№ Рейса: ";
+}
+
+li:nth-of-type(3):before {
+    content: "Авиакомпания: ";
+}
+
+li:nth-of-type(4):before {
+    content: "Логотип: ";
+}
+
+li:nth-of-type(5):before {
+    content: "Тип Судна: ";
+}
+
+li:nth-of-type(6):before {
+    content: "Аэропорт назначения: ";
+}
+
+#slide1:checked ~ div li:nth-of-type(7):before {
+    content: "Плановое время вылета: ";
+}
+
+#slide2:checked ~ div li:nth-of-type(7):before {
+    content: "Плановое время прилета: ";
+}
+
+li:nth-of-type(8):before {
+    content: "Статус: ";
+}
+
+li:nth-of-type(9):before {
+    content: "Код-шеринг: ";
+}

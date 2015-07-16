@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slider</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div class="container">
+    <input type="radio" name="point" id="slide1" checked>
+    <input type="radio" name="point" id="slide2">
+
+    <table class="head">
+        <tr>
+            <th colspan="9">
+
+                <div class="controls">
+                    <label for="slide1">Вылет</label>
+                    <label for="slide2">Прилет</label>
+                </div>
+            </th>
+        </tr>
+        <tr>
+            <th id="close">Тип рейса</th>
+            <th>№ рейса</th>
+            <th>Авиакомпания</th>
+            <th></th>
+            <th>Тип судна</th>
+            <th>Аэропорт назначения</th>
+            <th>Плановое время</th>
+            <th>Статус</th>
+            <th>Код-шеринг</th>
+        </tr>
+    </table>
+
+
+    <table>
+        <tr onclick="location.href='#v1'">
+            <td></td>
+            <td>UN 301</td>
+            <td>Трансаэро</td>
+            <td><img src="img/logo/transaero.png"></td>
+            <td>Боинг 737-800</td>
+            <td>Тель-Авив (Бен Гурион интерн.)</td>
+            <td>10:00 12.07.2015</td>
+            <td>регистрация</td>
+            <td></td>
+        </tr>
+        <tr onclick="location.href='#v2'">
+            <td></td>
+            <td>I4 9225</td>
+            <td>Ай Флай</td>
+            <td><img src="img/logo/ifly.png"></td>
+            <td>Боинг 757-200</td>
+            <td>Хургада</td>
+            <td>10:00 13.07.2015</td>
+            <td>регистрация</td>
+            <td></td>
+        </tr>
+        <tr onclick="location.href='#v3'">
+            <td></td>
+            <td>ДР 195</td>
+            <td>Победа</td>
+            <td><img src="img/logo/pobeda.png"></td>
+            <td>Боинг 737-800 (в)</td>
+            <td>Владикавказ (Беслан)</td>
+            <td>10:00 13.07.2015</td>
+            <td>регистрация</td>
+            <td></td>
+        </tr>
+        <tr onclick="location.href='#v4'">
+            <td></td>
+            <td>W6 2490</td>
+            <td>Виз Эйр Венгрия</td>
+            <td><img src="img/logo/wizz.png"></td>
+            <td>Аэробус А322</td>
+            <td>Будапешт (Ферихедь)</td>
+            <td>10:05 13.07.2015</td>
+            <td>регистрация</td>
+            <td></td>
+        </tr>
+        <tr onclick="location.href='#v5'">
+            <td></td>
+            <td>UN 1155</td>
+            <td>Трансаэро</td>
+            <td><img src="img/logo/transaero.png"></td>
+            <td>Боинг 737-800</td>
+            <td>Бургас</td>
+            <td>10:05 13.07.2015</td>
+            <td>регистрация</td>
+            <td></td>
+        </tr>
+        <tr onclick="location.href='#v6'">
+            <td></td>
+            <td>UN 399</td>
+            <td>Трансаэро</td>
+            <td><img src="img/logo/transaero.png"></td>
+            <td>Боинг 737-800</td>
+            <td>Рим (Фьюмичино)</td>
+            <td>10:05 13.07.2015</td>
+            <td>ожидание посадки</td>
+            <td></td>
+        </tr>
+        <tr onclick="location.href='#v7'">
+            <td></td>
+            <td>UN 9999</td>
+            <td>Трансаэро</td>
+            <td><img src="img/logo/transaero.png"></td>
+            <td>Боинг 747-400</td>
+            <td>Пекин (Кэпитал интернэйшнл)</td>
+            <td>10:10 13.07.2015</td>
+            <td>отменён</td>
+            <td></td>
+        </tr>
+        <tr onclick="location.href='#v8'">
+            <td></td>
+            <td>UN 207</td>
+            <td>Трансаэро</td>
+            <td><img src="img/logo/transaero.png"></td>
+            <td>Боинг 737-400</td>
+            <td>Одесса (Интернэйшнл)</td>
+            <td>10:10 13.07.2015</td>
+            <td>ожидание посадки</td>
+            <td>UN/CI</td>
+        </tr>
+        <tr onclick="location.href='#v9'">
+            <td></td>
+            <td>ЮТ 4207</td>
+            <td>ЮТэйр</td>
+            <td><img src="img/logo/utair.png"></td>
+            <td>Боинг 737-400</td>
+            <td>Одесса (Интернэйшнл)</td>
+            <td>10:10 13.07.2015</td>
+            <td>ожидание посадки</td>
+            <td></td>
+        </tr>
+        <tr onclick="location.href='#v10'">
+            <td></td>
+            <td>UN 517</td>
+            <td>Трансаэро</td>
+            <td><img src="img/logo/transaero.png"></td>
+            <td>Боинг 777-200ЕР</td>
+            <td>Торонто (Пирсон инт.)</td>
+            <td>10:15 13.07.2015</td>
+            <td>ожидание посадки</td>
+            <td></td>
+        </tr>
+        <tr onclick="location.href='#v11'">
+            <td></td>
+            <td>Д9 5349</td>
+            <td>ДОНАВИА</td>
+            <td><img src="img/logo/donavia.png"></td>
+            <td>Аэробус А319</td>
+            <td>Краснодар (Пашковская)</td>
+            <td>10:15 13.07.2015</td>
+            <td>задерживается до 10:35</td>
+            <td></td>
+        </tr>
+        <tr onclick="location.href='#v12'">
+            <td></td>
+            <td>СУ 5349</td>
+            <td>Аэрофлот — российские авиалинии</td>
+            <td><img src="img/logo/aeroflot.png"></td>
+            <td>Аэробус А319</td>
+            <td>Краснодар (Пашковская)</td>
+            <td>10:15 13.07.2015</td>
+            <td>посадка закончена</td>
+            <td>SU/R2</td>
+        </tr>
+        <tr onclick="location.href='#v13'">
+            <td></td>
+            <td>UN 201</td>
+            <td>Трансаэро</td>
+            <td><img src="img/logo/aeroflot.png"></td>
+            <td>Боинг 737-700</td>
+            <td>Киев (Жуляны интернэйшнл)</td>
+            <td>10:15 13.07.2015</td>
+            <td>отменён</td>
+            <td></td>
+        </tr>
+        <tr onclick="location.href='#v14'">
+            <td></td>
+            <td>УН 6365</td>
+            <td>Трансаэро</td>
+            <td><img src="img/logo/transaero.png"></td>
+            <td>Боинг 737-500</td>
+            <td>Уфа</td>
+            <td>10:20 13.07.2015</td>
+            <td>посадка закончена</td>
+            <td></td>
+        </tr>
+        <tr onclick="location.href='#v15'">
+            <td></td>
+            <td>ЮТ 365</td>
+            <td>ЮТэйр</td>
+            <td><img src="img/logo/utair.png"></td>
+            <td>Боинг 737-500</td>
+            <td>Уфа</td>
+            <td>10:20 13.07.2015</td>
+            <td>посадка закончена</td>
+            <td></td>
+        </tr>
+        <tr onclick="location.href='#v16'">
+            <td></td>
+            <td>ЮТ 455</td>
+            <td>ЮТэйр</td>
+            <td><img src="img/logo/utair.png"></td>
+            <td>Боинг 737-500</td>
+            <td>Ноябрьск</td>
+            <td>10:20 13.07.2015</td>
+            <td>вылетел</td>
+            <td></td>
+        </tr>
+        <tr onclick="location.href='#v17'">
+            <td></td>
+            <td>UN 307</td>
+            <td>Трансаэро</td>
+            <td><img src="img/logo/transaero.png"></td>
+            <td>Боинг 737-800</td>
+            <td>Франкфурт-на-Майне (Интерн.)</td>
+            <td>10:20 13.07.2015</td>
+            <td>вылетел</td>
+            <td></td>
+        </tr>
+        <tr onclick="location.href='#v18'">
+            <td></td>
+            <td>ЮТ 161</td>
+            <td>ЮТэйр</td>
+            <td><img src="img/logo/utair.png"></td>
+            <td>АТР 72</td>
+            <td>Нижний Новгород</td>
+            <td>10:25 13.07.2015</td>
+            <td>вылетел</td>
+            <td></td>
+        </tr>
+        <tr onclick="location.href='#v19'">
+            <td></td>
+            <td>OS 7072</td>
+            <td>Австрийские авиалинии</td>
+            <td><img src="img/logo/austrian.png"></td>
+            <td>Боинг 737-700</td>
+            <td>Вена</td>
+            <td>10:30 13.07.2015</td>
+            <td>вылетел</td>
+            <td></td>
+        </tr>
+        <tr onclick="location.href='#v20'">
+            <td></td>
+            <td>UN 323</td>
+            <td>Трансаэро</td>
+            <td><img src="img/logo/transaero.png"></td>
+            <td>Боинг 737-700</td>
+            <td>Вена</td>
+            <td>10:30 13.07.2015</td>
+            <td>вылетел</td>
+            <td></td>
+        </tr>
+        <tr onclick="location.href='#v21'">
+            <td></td>
+            <td>UT 9009</td>
+            <td>ЮТэйр</td>
+            <td><img src="img/logo/utair.png"></td>
+            <td>Боинг 767-200</td>
+            <td>Бургас</td>
+            <td>10:30 13.07.2015</td>
+            <td>задерживается до 10:55</td>
+            <td></td>
+        </tr>
+        <tr onclick="location.href='#v22'">
+            <td></td>
+            <td>ЮТ 293</td>
+            <td>ЮТэйр</td>
+            <td><img src="img/logo/utair.png"></td>
+            <td>АТР 72</td>
+            <td>Тамбов</td>
+            <td>10:30 13.07.2015</td>
+            <td>вылетел</td>
+            <td></td>
+        </tr>
+        <tr onclick="location.href='#v23'">
+            <td></td>
+            <td>UN 209</td>
+            <td>Трансаэро</td>
+            <td><img src="img/logo/transaero.png"></td>
+            <td>Боинг 777-200ЕР</td>
+            <td>Ташкент</td>
+            <td>10:30 13.07.2015</td>
+            <td>вылетел</td>
+            <td></td>
+        </tr>
+    </table>
+
+
+    <table>
+        <tr onclick="location.href='#p1'">
+            <td></td>
+            <td>ЮТ 492</td>
+            <td>ЮТэйр</td>
+            <td><img src="img/logo/utair.png"></td>
+            <td>Боинг 737-500</td>
+            <td>Ростов-на-Дону</td>
+            <td>10:05 13.07.2015</td>
+            <td>приземлился</td>
+            <td></td>
+        </tr>
+        <tr onclick="location.href='#p2'">
+            <td></td>
+            <td>УН 2338</td>
+            <td>Трансаэро</td>
+            <td><img src="img/logo/transaero.png"></td>
+            <td>Боинг 737-800</td>
+            <td>Горно-Алтайск</td>
+            <td>10:20 13.07.2015</td>
+            <td>отменён</td>
+            <td></td>
+        </tr>
+        <tr onclick="location.href='#p3'">
+            <td></td>
+            <td>ПЛ 6127</td>
+            <td>Россия</td>
+            <td><img src="img/logo/russia.png"></td>
+            <td>Аэробус А319</td>
+            <td>Санкт-П.(Пулково)</td>
+            <td>10:40 13.07.2015</td>
+            <td>приземлился</td>
+            <td></td>
+        </tr>
+        <tr onclick="location.href='#p4'">
+            <td></td>
+            <td>СУ 6127</td>
+            <td>Аэрофлот — российские авиалинии</td>
+            <td><img src="img/logo/aeroflot.png"></td>
+            <td>Аэробус А319</td>
+            <td>Санкт-П.(Пулково)</td>
+            <td>10:40 13.07.2015</td>
+            <td>задерживается до 11:05</td>
+            <td></td>
+        </tr>
+        <tr onclick="location.href='#p5'">
+            <td></td>
+            <td>A9 930</td>
+            <td>Грузинские Авиалинии</td>
+            <td><img src="img/logo/gruzin.png"></td>
+            <td>Боинг 737-700</td>
+            <td>Тбилиси (Лочини)</td>
+            <td>10:45 13.07.2015</td>
+            <td>приземлился</td>
+            <td></td>
+        </tr>
+        <tr onclick="location.href='#p6'">
+            <td></td>
+            <td>ЮТ 286</td>
+            <td>ЮТэйр</td>
+            <td><img src="img/logo/utair.png"></td>
+            <td>Боинг 737-500</td>
+            <td>Сургут</td>
+            <td>10:50 13.07.2015</td>
+            <td>приземлился</td>
+            <td></td>
+        </tr>
+        <tr onclick="location.href='#p7'">
+            <td></td>
+            <td>УН 2802</td>
+            <td>Трансаэро</td>
+            <td><img src="img/logo/transaero.png"></td>
+            <td>Боинг 747-400</td>
+            <td>Симферополь (Интернэйшнл)</td>
+            <td>11:05 13.07.2015</td>
+            <td>летит</td>
+            <td></td>
+        </tr>
+        <tr onclick="location.href='#p8'">
+            <td></td>
+            <td>M9 315</td>
+            <td>Мотор Сич</td>
+            <td><img src="img/logo/motor.png"></td>
+            <td>АН-24</td>
+            <td>Запорожье (Мокрая инт.)</td>
+            <td>11:15 13.07.2015</td>
+            <td>летит</td>
+            <td></td>
+        </tr>
+        <tr onclick="location.href='#p9'">
+            <td></td>
+            <td>TK 413</td>
+            <td>Турецкие авиалинии</td>
+            <td><img src="img/logo/turkey.png"></td>
+            <td>Аэробус А321</td>
+            <td>Стамбул (Ататюрк)</td>
+            <td>11:20 13.07.2015</td>
+            <td>по расписанию</td>
+            <td>TK/UT</td>
+        </tr>
+        <tr onclick="location.href='#p10'">
+            <td></td>
+            <td>УН 172</td>
+            <td>Трансаэро</td>
+            <td><img src="img/logo/transaero.png"></td>
+            <td>Боинг 737-800</td>
+            <td>Новый Уренгой</td>
+            <td>11:30 13.07.2015</td>
+            <td>летит</td>
+            <td></td>
+        </tr>
+        <tr onclick="location.href='#p11'">
+            <td></td>
+            <td>ДР 164</td>
+            <td>Победа</td>
+            <td><img src="img/logo/pobeda.png"></td>
+            <td>Боинг 737-800 (в</td>
+            <td>Астрахань (Нариманово)</td>
+            <td>11:45 13.07.2015</td>
+            <td>по расписанию</td>
+            <td></td>
+        </tr>
+        <tr onclick="location.href='#p12'">
+            <td></td>
+            <td>ДР 232</td>
+            <td>Победа</td>
+            <td><img src="img/logo/pobeda.png"></td>
+            <td>Боинг 737-800 (в)</td>
+            <td>Архангельск (Талаги)</td>
+            <td>11:50 13.07.2015</td>
+            <td>по расписанию</td>
+            <td></td>
+        </tr>
+        <tr onclick="location.href='#p13'">
+            <td></td>
+            <td>ДР 222</td>
+            <td>Победа</td>
+            <td><img src="img/logo/pobeda.png"></td>
+            <td>Боинг 737-800 (в)</td>
+            <td>Белгород</td>
+            <td>12:00 13.07.2015</td>
+            <td>летит</td>
+            <td></td>
+        </tr>
+        <tr onclick="location.href='#p14'">
+            <td></td>
+            <td>ДР 146</td>
+            <td>Победа</td>
+            <td><img src="img/logo/pobeda.png"></td>
+            <td>Боинг 737-800 (в)</td>
+            <td>Анапа (Витязево)</td>
+            <td>12:00 13.07.2015</td>
+            <td>отменён</td>
+            <td></td>
+        </tr>
+        <tr onclick="location.href='#p15'">
+            <td></td>
+            <td>ДР 176</td>
+            <td>Победа</td>
+            <td><img src="img/logo/pobeda.png"></td>
+            <td>Боинг 737-800 (в)</td>
+            <td>Геленджик</td>
+            <td>12:10 13.07.2015</td>
+            <td>по расписанию</td>
+            <td></td>
+        </tr>
+        <tr onclick="location.href='#p16'">
+            <td></td>
+            <td>ЮТ 656</td>
+            <td>ЮТэйр</td>
+            <td><img src="img/logo/utair.png"></td>
+            <td>Тип судна</td>
+            <td>Краснодар (Пашковская)</td>
+            <td>12:30 13.07.2015</td>
+            <td>по расписанию</td>
+            <td></td>
+        </tr>
+        <tr onclick="location.href='#p17'">
+            <td></td>
+            <td>УН 116</td>
+            <td>Трансаэро</td>
+            <td><img src="img/logo/transaero.png"></td>
+            <td>Боинг 767-300</td>
+            <td>Иркутск</td>
+            <td>12:45 13.07.2015</td>
+            <td>летит</td>
+            <td></td>
+        </tr>
+        <tr onclick="location.href='#p18'">
+            <td></td>
+            <td>ЮТ 4116</td>
+            <td>ЮТэйр</td>
+            <td><img src="img/logo/utair.png"></td>
+            <td>Боинг 767-300</td>
+            <td>Иркутск</td>
+            <td>12:45 13.07.2015</td>
+            <td>по расписанию</td>
+            <td></td>
+        </tr>
+        <tr onclick="location.href='#p19'">
+            <td></td>
+            <td>ГГ 722</td>
+            <td>Грозный Авиа</td>
+            <td><img src="img/logo/groz.png"></td>
+            <td>ЯК-42Д</td>
+            <td>Грозный</td>
+            <td>13:10 13.07.2015</td>
+            <td>отменён</td>
+            <td></td>
+        </tr>
+        <tr onclick="location.href='#p20'">
+            <td></td>
+            <td>ЮТ 382</td>
+            <td>ЮТэйр</td>
+            <td><img src="img/logo/utair.png"></td>
+            <td>Боинг 737-500</td>
+            <td>Санкт-П.(Пулково)</td>
+            <td>13:30 13.07.2015</td>
+            <td>летит</td>
+            <td></td>
+        </tr>
+        <tr onclick="location.href='#p21'">
+            <td></td>
+            <td>UT 9012</td>
+            <td>ЮТэйр</td>
+            <td><img src="img/logo/utair.png"></td>
+            <td>Боинг 767-200</td>
+            <td>Анталья</td>
+            <td>13:35 13.07.2015</td>
+            <td>по расписанию</td>
+            <td></td>
+        </tr>
+        <tr onclick="location.href='#p22'">
+            <td></td>
+            <td>ДР 152</td>
+            <td>Победа</td>
+            <td><img src="img/logo/pobeda.png"></td>
+            <td>Боинг 767-200</td>
+            <td>Анапа (Витязево)</td>
+            <td>13:40 13.07.2015</td>
+            <td>летит</td>
+            <td></td>
+        </tr>
+    </table>
+
+
+    <div id="myPop1">
+        <a href="" class="overlay" id="v1"></a>
+
+        <div class="popup">
+            <h2>Информация о рейсе:</h2>
+            <ul onclick="location.href='#v1'">
+                <li></li>
+                <li>UN 301</li>
+                <li>Трансаэро</li>
+                <li><img src="img/logo/transaero.png"></li>
+                <li>Боинг 737-800</li>
+                <li>Тель-Авив (Бен Гурион интерн.)</li>
+                <li>10:00 12.07.2015</li>
+                <li>регистрация</li>
+                <li></li>
+            </ul>
+
+            <a class="close" title="Закрыть" href="#close"></a>
+        </div>
+        <a href="" class="overlay" id="v2"></a>
+
+        <div class="popup"><h2>Информация о рейсе:</h2>
+            <ul onclick="location.href='#v2'">
+                <li></li>
+                <li>I4 9225</li>
+                <li>Ай Флай</li>
+                <li><img src="img/logo/ifly.png"></li>
+                <li>Боинг 757-200</li>
+                <li>Хургада</li>
+                <li>10:00 13.07.2015</li>
+                <li>регистрация</li>
+                <li></li>
+            </ul>
+            <a class="close" title="Закрыть" href="#close"></a></div>
+        <a href="" class="overlay" id="v3"></a>
+
+        <div class="popup"><h2>Информация о рейсе:</h2>
+            <ul onclick="location.href='#v3'">
+                <li></li>
+                <li>ДР 195</li>
+                <li>Победа</li>
+                <li><img src="img/logo/pobeda.png"></li>
+                <li>Боинг 737-800 (в)</li>
+                <li>Владикавказ (Беслан)</li>
+                <li>10:00 13.07.2015</li>
+                <li>регистрация</li>
+                <li></li>
+            </ul>
+            <a class="close" title="Закрыть" href="#close"></a></div>
+        <a href="" class="overlay" id="v4"></a>
+
+        <div class="popup"><h2>Информация о рейсе:</h2>
+            <ul onclick="location.href='#v4'">
+                <li></li>
+                <li>W6 2490</li>
+                <li>Виз Эйр Венгрия</li>
+                <li><img src="img/logo/wizz.png"></li>
+                <li>Аэробус А322</li>
+                <li>Будапешт (Ферихедь)</li>
+                <li>10:05 13.07.2015</li>
+                <li>регистрация</li>
+                <li></li>
+            </ul>
+            <a class="close" title="Закрыть" href="#close"></a></div>
+        <a href="" class="overlay" id="v5"></a>
+
+        <div class="popup"><h2>Информация о рейсе:</h2>
+            <ul onclick="location.href='#v5'">
+                <li></li>
+                <li>UN 1155</li>
+                <li>Трансаэро</li>
+                <li><img src="img/logo/transaero.png"></li>
+                <li>Боинг 737-800</li>
+                <li>Бургас</li>
+                <li>10:05 13.07.2015</li>
+                <li>регистрация</li>
+                <li></li>
+            </ul>
+            <a class="close" title="Закрыть" href="#close"></a></div>
+        <a href="" class="overlay" id="v6"></a>
+
+        <div class="popup"><h2>Информация о рейсе:</h2>
+            <ul onclick="location.href='#v6'">
+                <li></li>
+                <li>UN 399</li>
+                <li>Трансаэро</li>
+                <li><img src="img/logo/transaero.png"></li>
+                <li>Боинг 737-800</li>
+                <li>Рим (Фьюмичино)</li>
+                <li>10:05 13.07.2015</li>
+                <li>ожидание посадки</li>
+                <li></li>
+            </ul>
+            <a class="close" title="Закрыть" href="#close"></a></div>
+        <a href="" class="overlay" id="v7"></a>
+
+        <div class="popup"><h2>Информация о рейсе:</h2>
+            <ul onclick="location.href='#v7'">
+                <li></li>
+                <li>UN 9999</li>
+                <li>Трансаэро</li>
+                <li><img src="img/logo/transaero.png"></li>
+                <li>Боинг 747-400</li>
+                <li>Пекин (Кэпитал интернэйшнл)</li>
+                <li>10:10 13.07.2015</li>
+                <li>отменён</li>
+                <li></li>
+            </ul>
+            <a class="close" title="Закрыть" href="#close"></a></div>
+        <a href="" class="overlay" id="v8"></a>
+
+        <div class="popup"><h2>Информация о рейсе:</h2>
+            <ul onclick="location.href='#v8'">
+                <li></li>
+                <li>UN 207</li>
+                <li>Трансаэро</li>
+                <li><img src="img/logo/transaero.png"></li>
+                <li>Боинг 737-400</li>
+                <li>Одесса (Интернэйшнл)</li>
+                <li>10:10 13.07.2015</li>
+                <li>ожидание посадки</li>
+                <li>UN/CI</li>
+            </ul>
+            <a class="close" title="Закрыть" href="#close"></a></div>
+        <a href="" class="overlay" id="v9"></a>
+
+        <div class="popup"><h2>Информация о рейсе:</h2>
+            <ul onclick="location.href='#v9'">
+                <li></li>
+                <li>ЮТ 4207</li>
+                <li>ЮТэйр</li>
+                <li><img src="img/logo/utair.png"></li>
+                <li>Боинг 737-400</li>
+                <li>Одесса (Интернэйшнл)</li>
+                <li>10:10 13.07.2015</li>
+                <li>ожидание посадки</li>
+                <li></li>
+            </ul>
+            <a class="close" title="Закрыть" href="#close"></a></div>
+        <a href="" class="overlay" id="v10"></a>
+
+        <div class="popup"><h2>Информация о рейсе:</h2>
+            <ul onclick="location.href='#v10'">
+                <li></li>
+                <li>UN 517</li>
+                <li>Трансаэро</li>
+                <li><img src="img/logo/transaero.png"></li>
+                <li>Боинг 777-200ЕР</li>
+                <li>Торонто (Пирсон инт.)</li>
+                <li>10:15 13.07.2015</li>
+                <li>ожидание посадки</li>
+                <li></li>
+            </ul>
+            <a class="close" title="Закрыть" href="#close"></a></div>
+        <a href="" class="overlay" id="v11"></a>
+
+        <div class="popup"><h2>Информация о рейсе:</h2>
+            <ul onclick="location.href='#v11'">
+                <li></li>
+                <li>Д9 5349</li>
+                <li>ДОНАВИА</li>
+                <li><img src="img/logo/donavia.png"></li>
+                <li>Аэробус А319</li>
+                <li>Краснодар (Пашковская)</li>
+                <li>10:15 13.07.2015</li>
+                <li>задерживается до 10:35</li>
+                <li></li>
+            </ul>
+            <a class="close" title="Закрыть" href="#close"></a></div>
+        <a href="" class="overlay" id="v12"></a>
+
+        <div class="popup"><h2>Информация о рейсе:</h2>
+            <ul onclick="location.href='#v12'">
+                <li></li>
+                <li>СУ 5349</li>
+                <li>Аэрофлот — российские авиалинии</li>
+                <li><img src="img/logo/aeroflot.png"></li>
+                <li>Аэробус А319</li>
+                <li>Краснодар (Пашковская)</li>
+                <li>10:15 13.07.2015</li>
+                <li>посадка закончена</li>
+                <li>SU/R2</li>
+            </ul>
+            <a class="close" title="Закрыть" href="#close"></a></div>
+        <a href="" class="overlay" id="v13"></a>
+
+        <div class="popup"><h2>Информация о рейсе:</h2>
+            <ul onclick="location.href='#v13'">
+                <li></li>
+                <li>UN 201</li>
+                <li>Трансаэро</li>
+                <li><img src="img/logo/aeroflot.png"></li>
+                <li>Боинг 737-700</li>
+                <li>Киев (Жуляны интернэйшнл)</li>
+                <li>10:15 13.07.2015</li>
+                <li>отменён</li>
+                <li></li>
+            </ul>
+            <a class="close" title="Закрыть" href="#close"></a></div>
+        <a href="" class="overlay" id="v14"></a>
+
+        <div class="popup"><h2>Информация о рейсе:</h2>
+            <ul onclick="location.href='#v14'">
+                <li></li>
+                <li>УН 6365</li>
+                <li>Трансаэро</li>
+                <li><img src="img/logo/transaero.png"></li>
+                <li>Боинг 737-500</li>
+                <li>Уфа</li>
+                <li>10:20 13.07.2015</li>
+                <li>посадка закончена</li>
+                <li></li>
+            </ul>
+            <a class="close" title="Закрыть" href="#close"></a></div>
+        <a href="" class="overlay" id="v15"></a>
+
+        <div class="popup"><h2>Информация о рейсе:</h2>
+            <ul onclick="location.href='#v15'">
+                <li></li>
+                <li>ЮТ 365</li>
+                <li>ЮТэйр</li>
+                <li><img src="img/logo/utair.png"></li>
+                <li>Боинг 737-500</li>
+                <li>Уфа</li>
+                <li>10:20 13.07.2015</li>
+                <li>посадка закончена</li>
+                <li></li>
+            </ul>
+            <a class="close" title="Закрыть" href="#close"></a></div>
+        <a href="" class="overlay" id="v16"></a>
+
+        <div class="popup"><h2>Информация о рейсе:</h2>
+            <ul onclick="location.href='#v16'">
+                <li></li>
+                <li>ЮТ 455</li>
+                <li>ЮТэйр</li>
+                <li><img src="img/logo/utair.png"></li>
+                <li>Боинг 737-500</li>
+                <li>Ноябрьск</li>
+                <li>10:20 13.07.2015</li>
+                <li>вылетел</li>
+                <li></li>
+            </ul>
+            <a class="close" title="Закрыть" href="#close"></a></div>
+        <a href="" class="overlay" id="v17"></a>
+
+        <div class="popup"><h2>Информация о рейсе:</h2>
+            <ul onclick="location.href='#v17'">
+                <li></li>
+                <li>UN 307</li>
+                <li>Трансаэро</li>
+                <li><img src="img/logo/transaero.png"></li>
+                <li>Боинг 737-800</li>
+                <li>Франкфурт-на-Майне (Интерн.)</li>
+                <li>10:20 13.07.2015</li>
+                <li>вылетел</li>
+                <li></li>
+            </ul>
+            <a class="close" title="Закрыть" href="#close"></a></div>
+        <a href="" class="overlay" id="v18"></a>
+
+        <div class="popup"><h2>Информация о рейсе:</h2>
+            <ul onclick="location.href='#v18'">
+                <li></li>
+                <li>ЮТ 161</li>
+                <li>ЮТэйр</li>
+                <li><img src="img/logo/utair.png"></li>
+                <li>АТР 72</li>
+                <li>Нижний Новгород</li>
+                <li>10:25 13.07.2015</li>
+                <li>вылетел</li>
+                <li></li>
+            </ul>
+            <a class="close" title="Закрыть" href="#close"></a></div>
+        <a href="" class="overlay" id="v19"></a>
+
+        <div class="popup"><h2>Информация о рейсе:</h2>
+            <ul onclick="location.href='#v19'">
+                <li></li>
+                <li>OS 7072</li>
+                <li>Австрийские авиалинии</li>
+                <li><img src="img/logo/austrian.png"></li>
+                <li>Боинг 737-700</li>
+                <li>Вена</li>
+                <li>10:30 13.07.2015</li>
+                <li>вылетел</li>
+                <li></li>
+            </ul>
+            <a class="close" title="Закрыть" href="#close"></a></div>
+        <a href="" class="overlay" id="v20"></a>
+
+        <div class="popup"><h2>Информация о рейсе:</h2>
+            <ul onclick="location.href='#v20'">
+                <li></li>
+                <li>UN 323</li>
+                <li>Трансаэро</li>
+                <li><img src="img/logo/transaero.png"></li>
+                <li>Боинг 737-700</li>
+                <li>Вена</li>
+                <li>10:30 13.07.2015</li>
+                <li>вылетел</li>
+                <li></li>
+            </ul>
+            <a class="close" title="Закрыть" href="#close"></a></div>
+        <a href="" class="overlay" id="v21"></a>
+
+        <div class="popup"><h2>Информация о рейсе:</h2>
+            <ul onclick="location.href='#v21'">
+                <li></li>
+                <li>UT 9009</li>
+                <li>ЮТэйр</li>
+                <li><img src="img/logo/utair.png"></li>
+                <li>Боинг 767-200</li>
+                <li>Бургас</li>
+                <li>10:30 13.07.2015</li>
+                <li>задерживается до 10:55</li>
+                <li></li>
+            </ul>
+            <a class="close" title="Закрыть" href="#close"></a></div>
+        <a href="" class="overlay" id="v22"></a>
+
+        <div class="popup"><h2>Информация о рейсе:</h2>
+            <ul onclick="location.href='#v22'">
+                <li></li>
+                <li>ЮТ 293</li>
+                <li>ЮТэйр</li>
+                <li><img src="img/logo/utair.png"></li>
+                <li>АТР 72</li>
+                <li>Тамбов</li>
+                <li>10:30 13.07.2015</li>
+                <li>вылетел</li>
+                <li></li>
+            </ul>
+            <a class="close" title="Закрыть" href="#close"></a></div>
+        <a href="" class="overlay" id="v23"></a>
+
+        <div class="popup"><h2>Информация о рейсе:</h2>
+            <ul onclick="location.href='#v23'">
+                <li></li>
+                <li>UN 209</li>
+                <li>Трансаэро</li>
+                <li><img src="img/logo/transaero.png"></li>
+                <li>Боинг 777-200ЕР</li>
+                <li>Ташкент</li>
+                <li>10:30 13.07.2015</li>
+                <li>вылетел</li>
+                <li></li>
+            </ul>
+            <a class="close" title="Закрыть" href="#close"></a></div>
+    </div>
+    <div id="myPop2">
+        <a href="" class="overlay" id="p1"></a>
+
+        <div class="popup">
+            <h2>Информация о рейсе:</h2>
+            <ul>
+                <li></li>
+                <li>ЮТ 492</li>
+                <li>ЮТэйр</li>
+                <li><img src="img/logo/utair.png"></li>
+                <li>Боинг 737-500</li>
+                <li>Ростов-на-Дону</li>
+                <li>10:05 13.07.2015</li>
+                <li>приземлился</li>
+                <li></li>
+            </ul>
+
+            <a class="close" title="Закрыть" href="#close"></a></div>
+        <a href="" class="overlay" id="p2"></a>
+
+        <div class="popup">
+            <h2>Информация о рейсе:</h2>
+            <ul>
+                <li></li>
+                <li>УН 2338</li>
+                <li>Трансаэро</li>
+                <li><img src="img/logo/transaero.png"></li>
+                <li>Боинг 737-800</li>
+                <li>Горно-Алтайск</li>
+                <li>10:20 13.07.2015</li>
+                <li>отменён</li>
+                <li></li>
+            </ul>
+
+            <a class="close" title="Закрыть" href="#close"></a></div>
+        <a href="" class="overlay" id="p3"></a>
+
+        <div class="popup">
+            <h2>Информация о рейсе:</h2>
+            <ul>
+                <li></li>
+                <li>ПЛ 6127</li>
+                <li>Россия</li>
+                <li><img src="img/logo/russia.png"></li>
+                <li>Аэробус А319</li>
+                <li>Санкт-П.(Пулково)</li>
+                <li>10:40 13.07.2015</li>
+                <li>приземлился</li>
+                <li></li>
+            </ul>
+
+            <a class="close" title="Закрыть" href="#close"></a></div>
+        <a href="" class="overlay" id="p4"></a>
+
+        <div class="popup">
+            <h2>Информация о рейсе:</h2>
+            <ul>
+                <li></li>
+                <li>СУ 6127</li>
+                <li>Аэрофлот — российские авиалинии</li>
+                <li><img src="img/logo/aeroflot.png"></li>
+                <li>Аэробус А319</li>
+                <li>Санкт-П.(Пулково)</li>
+                <li>10:40 13.07.2015</li>
+                <li>задерживается до 11:05</li>
+                <li></li>
+            </ul>
+
+            <a class="close" title="Закрыть" href="#close"></a></div>
+        <a href="" class="overlay" id="p5"></a>
+
+        <div class="popup">
+            <h2>Информация о рейсе:</h2>
+            <ul>
+                <li></li>
+                <li>A9 930</li>
+                <li>Грузинские Авиалинии</li>
+                <li><img src="img/logo/gruzin.png"></li>
+                <li>Боинг 737-700</li>
+                <li>Тбилиси (Лочини)</li>
+                <li>10:45 13.07.2015</li>
+                <li>приземлился</li>
+                <li></li>
+            </ul>
+
+            <a class="close" title="Закрыть" href="#close"></a></div>
+        <a href="" class="overlay" id="p6"></a>
+
+        <div class="popup">
+            <h2>Информация о рейсе:</h2>
+            <ul>
+                <li></li>
+                <li>ЮТ 286</li>
+                <li>ЮТэйр</li>
+                <li><img src="img/logo/utair.png"></li>
+                <li>Боинг 737-500</li>
+                <li>Сургут</li>
+                <li>10:50 13.07.2015</li>
+                <li>приземлился</li>
+                <li></li>
+            </ul>
+
+            <a class="close" title="Закрыть" href="#close"></a></div>
+        <a href="" class="overlay" id="p7"></a>
+
+        <div class="popup">
+            <h2>Информация о рейсе:</h2>
+            <ul>
+                <li></li>
+                <li>УН 2802</li>
+                <li>Трансаэро</li>
+                <li><img src="img/logo/transaero.png"></li>
+                <li>Боинг 747-400</li>
+                <li>Симферополь (Интернэйшнл)</li>
+                <li>11:05 13.07.2015</li>
+                <li>летит</li>
+                <li></li>
+            </ul>
+
+            <a class="close" title="Закрыть" href="#close"></a></div>
+        <a href="" class="overlay" id="p8"></a>
+
+        <div class="popup">
+            <h2>Информация о рейсе:</h2>
+            <ul>
+                <li></li>
+                <li>M9 315</li>
+                <li>Мотор Сич</li>
+                <li><img src="img/logo/motor.png"></li>
+                <li>АН-24</li>
+                <li>Запорожье (Мокрая инт.)</li>
+                <li>11:15 13.07.2015</li>
+                <li>летит</li>
+                <li></li>
+            </ul>
+
+            <a class="close" title="Закрыть" href="#close"></a></div>
+        <a href="" class="overlay" id="p9"></a>
+
+        <div class="popup">
+            <h2>Информация о рейсе:</h2>
+            <ul>
+                <li></li>
+                <li>TK 413</li>
+                <li>Турецкие авиалинии</li>
+                <li><img src="img/logo/turkey.png"></li>
+                <li>Аэробус А321</li>
+                <li>Стамбул (Ататюрк)</li>
+                <li>11:20 13.07.2015</li>
+                <li>по расписанию</li>
+                <li>TK/UT</li>
+            </ul>
+
+            <a class="close" title="Закрыть" href="#close"></a></div>
+        <a href="" class="overlay" id="p10"></a>
+
+        <div class="popup">
+            <h2>Информация о рейсе:</h2>
+            <ul>
+                <li></li>
+                <li>УН 172</li>
+                <li>Трансаэро</li>
+                <li><img src="img/logo/transaero.png"></li>
+                <li>Боинг 737-800</li>
+                <li>Новый Уренгой</li>
+                <li>11:30 13.07.2015</li>
+                <li>летит</li>
+                <li></li>
+            </ul>
+
+            <a class="close" title="Закрыть" href="#close"></a></div>
+        <a href="" class="overlay" id="p11"></a>
+
+        <div class="popup">
+            <h2>Информация о рейсе:</h2>
+            <ul>
+                <li></li>
+                <li>ДР 164</li>
+                <li>Победа</li>
+                <li><img src="img/logo/pobeda.png"></li>
+                <li>Боинг 737-800 (в</li>
+                <li>Астрахань (Нариманово)</li>
+                <li>11:45 13.07.2015</li>
+                <li>по расписанию</li>
+                <li></li>
+            </ul>
+
+            <a class="close" title="Закрыть" href="#close"></a></div>
+        <a href="" class="overlay" id="p12"></a>
+
+        <div class="popup">
+            <h2>Информация о рейсе:</h2>
+            <ul>
+                <li></li>
+                <li>ДР 232</li>
+                <li>Победа</li>
+                <li><img src="img/logo/pobeda.png"></li>
+                <li>Боинг 737-800 (в)</li>
+                <li>Архангельск (Талаги)</li>
+                <li>11:50 13.07.2015</li>
+                <li>по расписанию</li>
+                <li></li>
+            </ul>
+
+            <a class="close" title="Закрыть" href="#close"></a></div>
+        <a href="" class="overlay" id="p13"></a>
+
+        <div class="popup">
+            <h2>Информация о рейсе:</h2>
+            <ul>
+                <li></li>
+                <li>ДР 222</li>
+                <li>Победа</li>
+                <li><img src="img/logo/pobeda.png"></li>
+                <li>Боинг 737-800 (в)</li>
+                <li>Белгород</li>
+                <li>12:00 13.07.2015</li>
+                <li>летит</li>
+                <li></li>
+            </ul>
+
+            <a class="close" title="Закрыть" href="#close"></a></div>
+        <a href="" class="overlay" id="p14"></a>
+
+        <div class="popup">
+            <h2>Информация о рейсе:</h2>
+            <ul>
+                <li></li>
+                <li>ДР 146</li>
+                <li>Победа</li>
+                <li><img src="img/logo/pobeda.png"></li>
+                <li>Боинг 737-800 (в)</li>
+                <li>Анапа (Витязево)</li>
+                <li>12:00 13.07.2015</li>
+                <li>отменён</li>
+                <li></li>
+            </ul>
+
+            <a class="close" title="Закрыть" href="#close"></a></div>
+        <a href="" class="overlay" id="p15"></a>
+
+        <div class="popup">
+            <h2>Информация о рейсе:</h2>
+            <ul>
+                <li></li>
+                <li>ДР 176</li>
+                <li>Победа</li>
+                <li><img src="img/logo/pobeda.png"></li>
+                <li>Боинг 737-800 (в)</li>
+                <li>Геленджик</li>
+                <li>12:10 13.07.2015</li>
+                <li>по расписанию</li>
+                <li></li>
+            </ul>
+
+            <a class="close" title="Закрыть" href="#close"></a></div>
+        <a href="" class="overlay" id="p16"></a>
+
+        <div class="popup">
+            <h2>Информация о рейсе:</h2>
+            <ul>
+                <li></li>
+                <li>ЮТ 656</li>
+                <li>ЮТэйр</li>
+                <li><img src="img/logo/utair.png"></li>
+                <li>Тип судна</li>
+                <li>Краснодар (Пашковская)</li>
+                <li>12:30 13.07.2015</li>
+                <li>по расписанию</li>
+                <li></li>
+            </ul>
+
+            <a class="close" title="Закрыть" href="#close"></a></div>
+        <a href="" class="overlay" id="p17"></a>
+
+        <div class="popup">
+            <h2>Информация о рейсе:</h2>
+            <ul>
+                <li></li>
+                <li>УН 116</li>
+                <li>Трансаэро</li>
+                <li><img src="img/logo/transaero.png"></li>
+                <li>Боинг 767-300</li>
+                <li>Иркутск</li>
+                <li>12:45 13.07.2015</li>
+                <li>летит</li>
+                <li></li>
+            </ul>
+
+            <a class="close" title="Закрыть" href="#close"></a></div>
+        <a href="" class="overlay" id="p18"></a>
+
+        <div class="popup">
+            <h2>Информация о рейсе:</h2>
+            <ul>
+                <li></li>
+                <li>ЮТ 4116</li>
+                <li>ЮТэйр</li>
+                <li><img src="img/logo/utair.png"></li>
+                <li>Боинг 767-300</li>
+                <li>Иркутск</li>
+                <li>12:45 13.07.2015</li>
+                <li>по расписанию</li>
+                <li></li>
+            </ul>
+
+            <a class="close" title="Закрыть" href="#close"></a></div>
+        <a href="" class="overlay" id="p19"></a>
+
+        <div class="popup">
+            <h2>Информация о рейсе:</h2>
+            <ul>
+                <li></li>
+                <li>ГГ 722</li>
+                <li>Грозный Авиа</li>
+                <li><img src="img/logo/groz.png"></li>
+                <li>ЯК-42Д</li>
+                <li>Грозный</li>
+                <li>13:10 13.07.2015</li>
+                <li>отменён</li>
+                <li></li>
+            </ul>
+
+            <a class="close" title="Закрыть" href="#close"></a></div>
+        <a href="" class="overlay" id="p20"></a>
+
+        <div class="popup">
+            <h2>Информация о рейсе:</h2>
+            <ul>
+                <li></li>
+                <li>ЮТ 382</li>
+                <li>ЮТэйр</li>
+                <li><img src="img/logo/utair.png"></li>
+                <li>Боинг 737-500</li>
+                <li>Санкт-П.(Пулково)</li>
+                <li>13:30 13.07.2015</li>
+                <li>летит</li>
+                <li></li>
+            </ul>
+
+            <a class="close" title="Закрыть" href="#close"></a></div>
+        <a href="" class="overlay" id="p21"></a>
+
+        <div class="popup">
+            <h2>Информация о рейсе:</h2>
+            <ul>
+                <li></li>
+                <li>UT 9012</li>
+                <li>ЮТэйр</li>
+                <li><img src="img/logo/utair.png"></li>
+                <li>Боинг 767-200</li>
+                <li>Анталья</li>
+                <li>13:35 13.07.2015</li>
+                <li>по расписанию</li>
+                <li></li>
+            </ul>
+
+            <a class="close" title="Закрыть" href="#close"></a></div>
+        <a href="" class="overlay" id="p22"></a>
+
+        <div class="popup">
+            <h2>Информация о рейсе:</h2>
+            <ul>
+                <li></li>
+                <li>ДР 152</li>
+                <li>Победа</li>
+                <li><img src="img/logo/pobeda.png"></li>
+                <li>Боинг 767-200</li>
+                <li>Анапа (Витязево)</li>
+                <li>13:40 13.07.2015</li>
+                <li>летит</li>
+                <li></li>
+            </ul>
+
+            <a class="close" title="Закрыть" href="#close"></a></div>
+    </div>
+</div>
+</body>
+</html>
