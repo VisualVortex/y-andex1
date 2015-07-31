@@ -1,4 +1,7 @@
 /*table css*/
+.hide {
+    display: none;
+}
 .container {
     position: relative;
     margin: auto;
@@ -20,11 +23,6 @@ table {
     z-index: 15;
 }
 
-th {
-    background: #ccc;
-    height: 20px;
-}
-
 td, th {
     width: 40px;
     text-align: center;
@@ -35,7 +33,7 @@ td, th {
 }
 
 th {
-    background: #ccc;
+    background: #ddd;
     height: 20px;
 }
 

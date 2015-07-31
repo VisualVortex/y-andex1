@@ -157,23 +157,23 @@ li:before {
     font-weight: bold;
 }
 
-#slide1:checked ~ div li:nth-of-type(1):after {
+.popup #slide1:checked ~ div li:nth-of-type(1):after {
     content: "Тип Рейса: Вылет";
     font-weight: bold;
     color: darkblue;
 }
 
-#slide2:checked ~ div li:nth-of-type(1):after {
+.popup #slide2:checked ~ div li:nth-of-type(1):after {
     content: "Тип Рейса: Прилет";
     font-weight: bold;
     color: darkblue;
 }
 
-li:nth-of-type(2):before {
+.popup li:nth-of-type(2):before {
     content: "№ Рейса: ";
 }
 
-li:nth-of-type(3):before {
+.popup li:nth-of-type(3):before {
     content: "Авиакомпания: ";
 }
 
